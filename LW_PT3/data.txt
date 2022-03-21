@@ -1,0 +1,7 @@
+Euro:
+Ratio number 1 with value: 0.4;
+Ratio number 2 with value: 0.3;
+
+Pound:
+Ratio number 1 with value: 0.880056;
+

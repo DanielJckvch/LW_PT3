@@ -7,7 +7,6 @@ euro::euro()
 	cout << "Enter euro/rouble ratio" << endl;
 	cin >> euro_ratio;
 	euro_ratio = (euro_ratio == 0.0) ? 1 : euro_ratio;
-	next = NULL;
 	euro_ctr++;
 }
 
@@ -25,27 +24,6 @@ void euro::change_ratio(double new_r)
 	euro_ratio = new_r;
 }
 
-euro*euro:: get_next(void)
-{
-	return next;
-}
-
-void euro::set_next(void)
-{
-	next = new euro;
-}
-
-void euro::del_next(void)
-{
-	euro* temp;
-	temp = next;
-	if (!next)
-	{
-		cout << "Next element is not exist" << endl;
-	}
-	next = next->next;
-	delete temp;
-}
 
 int euro::getctr(void)
 {

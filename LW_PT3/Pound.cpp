@@ -7,7 +7,6 @@ pound::pound()
 	cout << "Enter pound/rouble ratio" << endl;
 	cin >> pound_ratio;
 	pound_ratio = (pound_ratio == 0.0) ? 1 : pound_ratio;
-	next = NULL;
 	pound_ctr++;
 }
 
@@ -25,27 +24,6 @@ void pound::change_ratio(double new_r)
 	pound_ratio = new_r;
 }
 
-pound* pound::get_next(void)
-{
-	return next;
-}
-
-void pound::set_next(void)
-{
-	next = new pound;
-}
-
-void pound::del_next(void)
-{
-	pound* temp;
-	temp = next;
-	if (!next)
-	{
-		cout << "Next element is not exist" << endl;
-	}
-	next = next->next;
-	delete temp;
-}
 
 int pound::getctr(void)
 {
